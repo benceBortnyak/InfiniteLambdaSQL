@@ -1,0 +1,1 @@
+SELECT annual_income FROM bb1410.mall_score ORDER BY spending_score DESC LIMIT 3;
