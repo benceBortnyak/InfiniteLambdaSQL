@@ -1,1 +1,1 @@
-SELECT annual_income FROM bb1410.mall_score ORDER BY spending_score DESC LIMIT 3;
+select DISTINCT ON(spending_score) ROUND(avg(annual_income)) as average_income from bb1410.mall_score group by spending_score order by spending_score desc limit 3 ;
